@@ -1,0 +1,52 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+h1,h3{
+    font-family: 'Passion One';
+    color: $fontcolor1;
+    margin: 0px;
+    padding: 5px;
+}
+
+h2,h4{
+    font-family: 'Passion One';
+    color: $fontcolor2;
+    padding: 5px;
+    margin: 0px;
+}
+
+h5{
+    font-family: 'Raleway';
+    color: $fontcolor2;
+    padding: 5px;
+    margin: 0px;
+    font-size: 14pt;
+}
+
+h6{
+    font-family: 'Raleway';
+    color: $fontGallery;
+    padding: 5px;
+    margin: 0px;
+    font-size: 14pt;
+}
+
+p{
+    font-family: 'Raleway';
+    color: $fontcolor2;
+    font-size: 12pt;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+//resets, normal stylings paragraph tags

@@ -1,10 +1,15 @@
-.twoBoxes{
+.aboutMeContainer{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 15px;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 20px;
 }
 
 .myFace{
     width: 150px;
+
+}
+
+.aboutMeText{
+    width: 100%
 }

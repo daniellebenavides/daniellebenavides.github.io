@@ -6,11 +6,24 @@
 }
 
 .bannerCont{
-    width: 25%;
-    padding: 15px;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0px;
+    // padding: 15px;
     &-Art{
         background-color: $primary1;
         overflow: hidden;
+        height: 100%;
+        transform: skewX(-10deg);
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit:cover;
+            transform: skewX(10deg);
+        }
     }
     &-Text{
         opacity: 0%;

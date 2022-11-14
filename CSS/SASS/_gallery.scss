@@ -1,7 +1,7 @@
 .portContainer{
     background-color: $primary2;
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
 }
 
 .galleryContainer{
@@ -12,16 +12,36 @@
 }
 
 .galleryArt{
-    width: 25%;
-    padding: 15px;
+    width: 33%;
+    height: 250px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
     &-Cont{
         background-color: $primary1;
         overflow: hidden;
+        height:100%;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            &#cat{
+                //object-position: top;
+                object-position: 0px -20px;
+            }
+            &#cake{
+                object-position: top;
+            }
+        }
     }
     &-Text{
         opacity: 0%;
         transition: opacity ease-in .3s;
         text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     &:hover, &:focus{
         .galleryArt{

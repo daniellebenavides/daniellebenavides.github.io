@@ -1,15 +1,35 @@
 .aboutMeContainer{
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    //gap: 50px;
     padding: 20px;
 }
 
+.twoBoxes{
+display: flex;
+justify-content: space-between;
+padding: 20px;
+
+
+}
 .myFace{
-    width: 150px;
+    width: 100%;
 
 }
 
 .aboutMeText{
     width: 100%
+    
+}
+
+.resumeContainer{
+    background-color: $primary1;
+    padding: 10px;
+}
+
+.resumeLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }

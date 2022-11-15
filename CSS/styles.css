@@ -33,7 +33,7 @@ h5 {
   color: #230C33;
   padding: 5px;
   margin: 0px;
-  font-size: 14pt;
+  font-size: 16pt;
 }
 
 h6 {
@@ -48,6 +48,7 @@ p {
   font-family: "Raleway";
   color: #230C33;
   font-size: 12pt;
+  line-height: 1.4;
 }
 
 img {
@@ -75,7 +76,7 @@ img {
   text-align: center;
 }
 
-.containLinks {
+.containLinks, .footerContainer {
   background-color: #7E52A0;
   margin: 0px;
   padding: 10px;
@@ -93,7 +94,7 @@ img {
   padding: 5px;
   margin: 0px;
   font-size: 14pt;
-  font-weight: 700;
+  font-weight: 600;
 }
 .menuItem i {
   display: block;
@@ -116,23 +117,19 @@ img {
 .bannerCont {
   display: flex;
   width: 100%;
-  height: 300px;
+  height: 400px;
   position: relative;
   overflow: hidden;
   padding: 20px 0px;
 }
 .bannerCont-Art {
-  background-color: #230C33;
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
+  position: relative;
+  width: 33%;
   height: 100%;
   transform: skewX(-10deg);
-}
-.bannerCont-Art img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transform: skewX(10deg);
 }
 .bannerCont-Text {
   opacity: 0%;
@@ -206,14 +203,30 @@ img {
 .aboutMeContainer {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  padding: 20px;
+}
+
+.twoBoxes {
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
 }
 
 .myFace {
-  width: 150px;
+  width: 100%;
 }
 
 .aboutMeText {
   width: 100%;
+}
+
+.resumeContainer {
+  background-color: #230C33;
+  padding: 10px;
+}
+
+.resumeLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */

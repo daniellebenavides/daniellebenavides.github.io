@@ -216,6 +216,11 @@ img {
   width: 100%;
 }
 
+hr.solid {
+  border-top: 4px solid #ACFCD9;
+  width: 110px;
+}
+
 .aboutMeText {
   width: 100%;
 }
@@ -229,4 +234,21 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.skillsContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.solid {
+  border-left: 4px solid #ACFCD9;
+}
+
+.skills, .software {
+  margin: 0;
+  padding: 20px;
 }/*# sourceMappingURL=styles.css.map */

@@ -112,36 +112,52 @@ img {
 
 .fullContainer {
   background-color: #191919;
+  display: flex;
+  min-height: 300px;
+  padding: 20px;
+  overflow: hidden;
 }
 
 .bannerCont {
-  display: flex;
   width: 100%;
-  height: 400px;
   position: relative;
   overflow: hidden;
-  padding: 20px 0px;
+  transform: skew(20deg);
 }
-.bannerCont-Art {
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  position: relative;
-  width: 33%;
+.bannerCont .image {
+  width: 150%;
   height: 100%;
-  transform: skewX(-10deg);
+  transform: skew(-20deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
 }
-.bannerCont-Text {
+.bannerCont .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.bannerCont .image .textTitle {
+  background-color: rgba(35, 12, 51, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0%;
-  transition: opacity ease-in 0.3s;
-  text-align: center;
+  transition: opacity 500ms ease;
 }
-.bannerCont:hover .galleryArt-Art img, .bannerCont:focus .galleryArt-Art img {
-  opacity: 0.5;
-  transition: opacity ease-in 0.3s;
+.bannerCont .image .textTitle p {
+  color: white;
+  font-size: 12pt;
 }
-.bannerCont:hover .galleryArt-Text, .bannerCont:focus .galleryArt-Text {
-  color: #ffffff;
+.bannerCont:hover .textTitle, .bannerCont:focus .textTitle {
   opacity: 1;
 }
 
@@ -158,8 +174,8 @@ img {
 
 .galleryArt {
   width: 33%;
-  height: 250px;
-  padding: 10px;
+  height: 300px;
+  padding: 15px;
   position: relative;
   overflow: hidden;
 }
@@ -168,19 +184,23 @@ img {
   overflow: hidden;
   height: 100%;
 }
-.galleryArt-Cont img {
+.galleryArt-Cont img, .galleryArt-Cont video {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.galleryArt-Cont img#cat {
-  -o-object-position: 0px -20px;
-     object-position: 0px -20px;
-}
-.galleryArt-Cont img#cake {
+.galleryArt-Cont img#typeface, .galleryArt-Cont video#typeface {
   -o-object-position: top;
      object-position: top;
+}
+.galleryArt-Cont img#comic, .galleryArt-Cont video#comic {
+  -o-object-position: top;
+     object-position: top;
+}
+.galleryArt-Cont img#lion, .galleryArt-Cont video#lion {
+  -o-object-position: 0 -40px;
+     object-position: 0 -40px;
 }
 .galleryArt-Text {
   opacity: 0%;
@@ -191,8 +211,8 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.galleryArt:hover .galleryArt-Cont img, .galleryArt:focus .galleryArt-Cont img {
-  opacity: 0.5;
+.galleryArt:hover .galleryArt-Cont img, .galleryArt:hover .galleryArt-Cont video, .galleryArt:focus .galleryArt-Cont img, .galleryArt:focus .galleryArt-Cont video {
+  opacity: 0.3;
   transition: opacity ease-in 0.3s;
 }
 .galleryArt:hover .galleryArt-Text, .galleryArt:focus .galleryArt-Text {
@@ -236,19 +256,33 @@ hr.solid {
   align-items: center;
 }
 
-.skillsContainer {
+.ssContainer {
   display: flex;
   justify-content: center;
+  align-content: center;
+  padding: 40px;
+}
+.ssContainer .textCenter {
+  width: 50%;
   text-align: center;
-  padding: 20px;
-  width: 100%;
 }
 
 .solid {
   border-left: 4px solid #ACFCD9;
 }
 
-.skills, .software {
+.emailContainer {
   margin: 0;
   padding: 20px;
+  background-color: #230C33;
+}
+
+.contactMe {
+  font-family: "Raleway";
+  color: #CAA8F5;
+}
+
+label {
+  color: #CAA8F5;
+  font-family: "Raleway";
 }/*# sourceMappingURL=styles.css.map */

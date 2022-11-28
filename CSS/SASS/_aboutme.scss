@@ -39,20 +39,34 @@ hr.solid{
     
 }
 
-.skillsContainer{
+.ssContainer{
     display: flex;
-    justify-content: center;
-    //align-content: center;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
+    justify-content:center;
+    align-content: center;
+    padding: 40px;
+    .textCenter{
+        width: 50%;
+        text-align: center;
+    }
 }
-
 .solid{
+    //padding: 0px 15px;
     border-left: 4px solid $highlight1;
 }
 
-.skills, .software{
+//email section
+.emailContainer{
     margin: 0;
     padding: 20px;
+    background-color: $primary1;
+}
+
+.contactMe{
+    font-family: 'Raleway';
+    color: $secondary1;
+}
+
+label{
+    color: $secondary1;
+    font-family: 'Raleway';
 }

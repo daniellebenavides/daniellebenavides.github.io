@@ -157,6 +157,9 @@ img {
   color: white;
   font-size: 12pt;
 }
+.bannerCont:hover, .bannerCont:focus {
+  cursor: pointer;
+}
 .bannerCont:hover .textTitle, .bannerCont:focus .textTitle {
   opacity: 1;
 }
@@ -198,10 +201,6 @@ img {
   -o-object-position: top;
      object-position: top;
 }
-.galleryArt-Cont img#lion, .galleryArt-Cont video#lion {
-  -o-object-position: 0 -40px;
-     object-position: 0 -40px;
-}
 .galleryArt-Text {
   opacity: 0%;
   transition: opacity ease-in 0.3s;
@@ -211,9 +210,14 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.galleryArt:hover, .galleryArt:focus {
+  cursor: pointer;
+}
 .galleryArt:hover .galleryArt-Cont img, .galleryArt:hover .galleryArt-Cont video, .galleryArt:focus .galleryArt-Cont img, .galleryArt:focus .galleryArt-Cont video {
   opacity: 0.3;
   transition: opacity ease-in 0.3s;
+  transform: scale(1.1);
+  transition: 1s;
 }
 .galleryArt:hover .galleryArt-Text, .galleryArt:focus .galleryArt-Text {
   color: #ffffff;

@@ -32,9 +32,9 @@
             &#comic{
                 object-position: top;
             }
-            &#lion{
-                object-position: 0 -40px;
-            }
+            // &#lion{
+            //     object-position: 0 -40px;
+            // }
         }
     }
     &-Text{
@@ -47,11 +47,14 @@
         transform: translate(-50%, -50%);
     }
     &:hover, &:focus{
+        cursor: pointer;
         .galleryArt{
             &-Cont{
                 img, video{
                     opacity: .3;
                     transition: opacity ease-in .3s;
+                    transform: scale(1.1);
+                    transition: 1s;
                 }
             }
             &-Text{

@@ -50,6 +50,7 @@
         }
     }
     &:hover, &:focus{
+        cursor: pointer;
         .textTitle{
             opacity: 1;
         }

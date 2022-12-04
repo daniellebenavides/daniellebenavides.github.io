@@ -4,6 +4,10 @@
     min-height: 300px;
     padding: 20px;
     overflow: hidden;
+    @include respond{
+        min-height: 200px;
+        padding: 0px;
+    }
     // flex-wrap: nowrap;
     // justify-content: space-evenly;
 }
@@ -30,11 +34,15 @@
             //     object-position: right;
             // }
         }
+        @include respond{
+            width: 170%;
+            height: 75%;
+        }
         .textTitle{
-            background-color: rgba($primary1, $alpha: 0.9);
+            background-color: rgba($primary1, $alpha: 0.7);
             position: absolute;
             width: 100%;
-            height:100%;
+            height:101%;
             top:50%;
             left: 50%;
             translate: -50% -50%;
@@ -50,7 +58,6 @@
         }
     }
     &:hover, &:focus{
-        cursor: pointer;
         .textTitle{
             opacity: 1;
         }

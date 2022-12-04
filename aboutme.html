@@ -28,7 +28,7 @@
 <div class="containLinks">
     <div class="linksContainer">
         <!--Portfolio-->
-        <a class="menuItem portfolio">
+        <a href="./#portfolio" class="menuItem portfolio">
             <i class="fa-regular fa-images"></i>
             Portfolio
         </a>
@@ -70,7 +70,7 @@
 <!--resume section-->
 <div class="resumeContainer">
     <div class="resumeLink">
-        <a href="https://indd.adobe.com/view/916d5f2d-6422-4798-857b-98aa8556d75f"><button>Resume</button></a>
+        <a href="https://indd.adobe.com/view/916d5f2d-6422-4798-857b-98aa8556d75f" class="button">Resume</a>
     </div>
 </div>
 
@@ -84,7 +84,7 @@
     </div>
     <div class="textCenter software">
         <h5>Software</h5>
-        <p>Microsoft Office Suite — Carrd Builder — Adobe Creative Suite: Illustrator, InDesign, Photoshop, Premiere Pro , After Effects, Substance Painter —  Sketchbook Pro — Rhinoceros — Revit + Enscape — SketchUp — ArchiCAD + Twinmotion — Maya + Renderman — HTML + CSSv</p>
+        <p>Microsoft Office Suite — Carrd Builder — Adobe Creative Suite: Illustrator, InDesign, Photoshop, Premiere Pro , After Effects, Substance Painter —  Sketchbook Pro — Rhinoceros — Revit + Enscape — SketchUp — ArchiCAD + Twinmotion — Maya + Renderman — HTML + CSS</p>
     </div>
 </div>
 
@@ -95,14 +95,17 @@
         danibena9tamu@gmail.com, or submit a message below. 
     </div>
     <div class="emailBoxes">
-        <form class="form" action="/form/submit" method="POST">
-            <label for="name">Name</label>
-          <input class="form-input" type="text" name="name" id="name">
-          <label for="email">Email</label>
-          <input class="form-input" type="email" name="email" id="email">
-          <label>Message</label>
-          <textarea class="form-textarea" type="text"></textarea>
-          <input type="submit" value="Submit">
+        <form action="mailto:danibena9tamu@gmail.com" method="post" enctype="text/plain">
+            Name: <br>
+            <input type="text" name="name"><br>
+            E-mail: <br>
+            <input type="text" name="mail">
+            <br>
+            Message: <br>
+            <input textarea name="message" size="40"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
     </div>
 </div>
 

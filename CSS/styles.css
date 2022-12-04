@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -64,16 +68,32 @@ img {
   width: 100%;
   display: flex;
 }
+@media only screen and (max-width: 430px) {
+  .headerContainer {
+    flex-direction: column;
+  }
+}
 
 .icon {
   width: 120px;
   position: absolute;
   left: 10px;
 }
+@media only screen and (max-width: 430px) {
+  .icon {
+    position: relative;
+    left: unset;
+  }
+}
 
 .name {
   padding: 40px;
   text-align: center;
+}
+@media only screen and (max-width: 430px) {
+  .name {
+    padding: 10px;
+  }
 }
 
 .containLinks, .footerContainer {
@@ -86,6 +106,15 @@ img {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+}
+@media only screen and (max-width: 430px) {
+  .linksContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+  }
 }
 
 .menuItem {
@@ -117,6 +146,12 @@ img {
   padding: 20px;
   overflow: hidden;
 }
+@media only screen and (max-width: 430px) {
+  .fullContainer {
+    min-height: 200px;
+    padding: 0px;
+  }
+}
 
 .bannerCont {
   width: 100%;
@@ -139,11 +174,17 @@ img {
   width: 100%;
   height: 100%;
 }
+@media only screen and (max-width: 430px) {
+  .bannerCont .image {
+    width: 170%;
+    height: 75%;
+  }
+}
 .bannerCont .image .textTitle {
-  background-color: rgba(35, 12, 51, 0.9);
+  background-color: rgba(35, 12, 51, 0.7);
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 101%;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -156,9 +197,6 @@ img {
 .bannerCont .image .textTitle p {
   color: white;
   font-size: 12pt;
-}
-.bannerCont:hover, .bannerCont:focus {
-  cursor: pointer;
 }
 .bannerCont:hover .textTitle, .bannerCont:focus .textTitle {
   opacity: 1;
@@ -174,6 +212,14 @@ img {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+@media only screen and (max-width: 430px) {
+  .galleryContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .galleryArt {
   width: 33%;
@@ -181,6 +227,11 @@ img {
   padding: 15px;
   position: relative;
   overflow: hidden;
+}
+@media only screen and (max-width: 430px) {
+  .galleryArt {
+    width: 100%;
+  }
 }
 .galleryArt-Cont {
   background-color: #230C33;
@@ -203,7 +254,7 @@ img {
 }
 .galleryArt-Text {
   opacity: 0%;
-  transition: opacity ease-in 0.3s;
+  transition: opacity ease-in 0.2s;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -213,7 +264,7 @@ img {
 .galleryArt:hover, .galleryArt:focus {
   cursor: pointer;
 }
-.galleryArt:hover .galleryArt-Cont img, .galleryArt:hover .galleryArt-Cont video, .galleryArt:focus .galleryArt-Cont img, .galleryArt:focus .galleryArt-Cont video {
+.galleryArt:hover .galleryArt-Cont img, .galleryArt:focus .galleryArt-Cont img {
   opacity: 0.3;
   transition: opacity ease-in 0.3s;
   transform: scale(1.1);
@@ -223,11 +274,20 @@ img {
   color: #ffffff;
   opacity: 1;
 }
+.galleryArt:hover .galleryArt-Text p, .galleryArt:focus .galleryArt-Text p {
+  color: white;
+  font-size: 10pt;
+}
 
 .aboutMeContainer {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+}
+@media only screen and (max-width: 430px) {
+  .aboutMeContainer {
+    flex-direction: column;
+  }
 }
 
 .twoBoxes {
@@ -241,12 +301,19 @@ img {
 }
 
 hr.solid {
-  border-top: 4px solid #ACFCD9;
+  border: 4px solid #ACFCD9;
+  margin: 10px 0px 10px 0px;
   width: 110px;
+  display: flex;
 }
 
 .aboutMeText {
   width: 100%;
+}
+@media only screen and (max-width: 430px) {
+  .aboutMeText {
+    text-align: center;
+  }
 }
 
 .resumeContainer {
@@ -260,6 +327,23 @@ hr.solid {
   align-items: center;
 }
 
+.button {
+  background-color: #CAA8F5;
+  border-radius: 3px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 14pt;
+  color: #230C33;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ACFCD9;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+}
+
 .ssContainer {
   display: flex;
   justify-content: center;
@@ -270,9 +354,22 @@ hr.solid {
   width: 50%;
   text-align: center;
 }
+@media only screen and (max-width: 430px) {
+  .ssContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .solid {
-  border-left: 4px solid #ACFCD9;
+  border: 4px solid #ACFCD9;
+  margin: 0px 15px 0px 15px;
+}
+@media only screen and (max-width: 430px) {
+  .solid {
+    margin: 15px 0px 15px 0px;
+    width: 230px;
+  }
 }
 
 .emailContainer {
@@ -286,7 +383,7 @@ hr.solid {
   color: #CAA8F5;
 }
 
-label {
+form {
   color: #CAA8F5;
   font-family: "Raleway";
 }/*# sourceMappingURL=styles.css.map */

@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danielle Benavides Web Portfolio</title>
-    <script src="./Javascript/index.js" defer></script>
+    
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="./CSS/lightbox.min.css">
     <link rel="aboutme" href="./aboutme.html">
-    <script type="text/javascript" src="./Javascript/lightbox-plus-jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./Javascript/lightbox-plus-jquery.min.js" defer></script>
     <script src="https://kit.fontawesome.com/fb153136ae.js" crossorigin="anonymous"></script>
+    <script src="./Javascript/index.js" defer></script>
 </head>
 <body>
     <div class="pageContainer">
@@ -31,7 +33,7 @@
    <div class="containLinks">
     <div class="linksContainer">
         <!--Portfolio-->
-        <a class="menuItem portfolio">
+        <a href="#portfolio" class="menuItem portfolio">
             <i class="fa-regular fa-images"></i>
             Portfolio
         </a>
@@ -93,10 +95,8 @@
     </div>
    </div>
 
-
-
    <!--Portfolio section-->
-    <div class="portContainer">
+    <div id="portfolio" class="portContainer">
         <!--Portfolio Title-->
         <div class="portTitle">
             <h2>Portfolio</h2>
@@ -111,33 +111,33 @@
     <div class="galleryContainer">
         <div class="galleryArt">
             <div class="galleryArt-Cont">
-                <a href="./Assets/Art/gallery1.png" data-lightbox="galleryArt">
+                <a href="./Assets/Art/gallery1.png" data-lightbox="galleryArt" data-title="Environment Illustration 1 | Fall 2022 | ARTS 315: Sam Woodfin">
                     <img src="./Assets/Art/gallery1.png" alt="">
                     <div class="galleryArt-Text">
                         <h6>Environment Illustration 1</h6>
-                        <h6>Fall 2022 | ARTS 315: Sam Woodfin</h6>
+                        <p>Fall 2022 | ARTS 315: Sam Woodfin</p>
                     </div>
                 </a>
             </div>
         </div>
         <div class="galleryArt">
             <div class="galleryArt-Cont">
-                <a href="./Assets/Art/gallery2.png" data-lightbox="galleryArt">
+                <a href="./Assets/Art/gallery2.png" data-lightbox="galleryArt" data-title="Environment Illustration 2 | Fall 2022 | ARTS 315: Sam Woodfin">
                     <img src="./Assets/Art/gallery2.png" alt="">
                     <div class="galleryArt-Text">
                         <h6>Environment Illustration 2</h6>
-                        <h6>Fall 2022 | ARTS 315: Sam Woodfin</h6>
+                        <p>Fall 2022 | ARTS 315: Sam Woodfin</p>
                     </div>
                 </a>
             </div>
         </div>
         <div class="galleryArt">
             <div class="galleryArt-Cont">
-                <a href="./Assets/Art/gallery3.png" data-lightbox="galleryArt">
+                <a href="./Assets/Art/gallery3.png" data-lightbox="galleryArt" data-title="Happy Feet Storyboards | Fall 2022 | ARTS 315: Sam Woodfin">
                     <img src="./Assets/Art/gallery3.png" alt="">
                     <div class="galleryArt-Text">
                         <h6>Happy Feet Storyboards</h6>
-                        <h6>Fall 2022 | ARTS 315: Sam Woodfin</h6>
+                        <p>Fall 2022 | ARTS 315: Sam Woodfin</p>
                     </div>
                 </a>
             </div>
@@ -148,7 +148,7 @@
                     <img src="./Assets/Art/gallery4.png" alt="">
                     <div class="galleryArt-Text">
                         <h6>Animal Portrait: Angel</h6>
-                        <h6>Fall 2020 | ARTS 325: Sam Woodfin</h6>
+                        <p>Fall 2020 | ARTS 325: Sam Woodfin</p>
                     </div>
                 </a>
             </div>
@@ -159,7 +159,7 @@
                     <img id="comic" src="./Assets/Art/gallery5.png" alt="">
                     <div class="galleryArt-Text">
                         <h6>Comic Strip: Spring</h6>
-                        <h6>Fall 2020 | VIST 282: Eman Al-Zuubeidi</h6>
+                        <p>Fall 2020 | VIST 282: Eman Al-Zuubeidi</p>
                     </div>
                 </a>
             </div>
@@ -170,7 +170,7 @@
                     <img src="./Assets/Art/gallery6.png" alt="">
                     <div class="galleryArt-Text">
                         <h6>Isometric Illustration</h6>
-                        <h6>Fall 2020 | VIST 282: Eman Al-Zuubeidi</h6>
+                        <p>Fall 2020 | VIST 282: Eman Al-Zuubeidi</p>
                     </div>
                 </a>
             </div>
@@ -181,7 +181,7 @@
                     <img id="typeface" src="./Assets/Art/gallery7.png" alt="">
                     <div class="galleryArt-Text">
                         <h6>Typeface Broucher: Proxima Nova</h6>
-                        <h6>Fall 2019 | ARTS 303: Jill Honeycutt</h6>
+                        <p>Fall 2019 | ARTS 303: Jill Honeycutt</p>
                     </div>
                 </a>
             </div>
@@ -192,53 +192,65 @@
                     <img src="./Assets/Art/gallery8.png" alt="">
                     <div class="galleryArt-Text">
                         <h6>Brand Identity Project</h6>
-                        <h6>Fall 2019 | ARTS 303: Jill Honeycutt</h6>
+                        <p>Fall 2019 | ARTS 303: Jill Honeycutt</p>
                     </div>
                 </a>
             </div>
         </div>
         <div class="galleryArt">
             <div class="galleryArt-Cont">
-                <video controls>
-                    <source src="./Assets/Art/gallery9.mp4" type="video/mp4">
-                </video>
-                <div class="galleryArt-Text">
-                    <h6>Vase Mended in Gold</h6>
-                    <h6>Spring 2022 | VIZA 616: Caleb Kicklighter & Jeff Nichols</h6>
-                </div>
+                <a href="./Assets/Art/gallery9.png" data-lightbox="galleryArt">
+                    <video id="renderTurns" controls>
+                        <source src="./Assets/Art/video1.mp4" type="video/mp4">
+                    </video>
+                    <!-- <img src="./Assets/Art/gallery9.png" alt=""> -->
+                    <div class="galleryArt-Text">
+                        <h6>Vase Mended in Gold</h6>
+                        <p>Spring 2022 | VIZA 616: Caleb Kicklighter & Jeff Nichols</p>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="galleryArt">
             <div class="galleryArt-Cont">
-                <video controls>
-                    <source src="./Assets/Art/gallery10.mp4" type="video/mp4">
-                </video>
-                <div class="galleryArt-Text">
-                    <h6>Saddle Handbag</h6>
-                    <h6>Spring 2022 | VIZA 616: Caleb Kicklighter & Jeff Nichols</h6>
-                </div>
+                <a href="./Assets/Art/gallery10.png" data-lightbox="galleryArt">
+                    <video id="renderTurns" controls>
+                        <source src="./Assets/Art/video2.mp4" type="video/mp4">
+                    </video>
+                    <!-- <img src="./Assets/Art/gallery10.png" alt=""> -->
+                    <div class="galleryArt-Text">
+                        <h6>Saddle Handbag</h6>
+                        <p>Spring 2022 | VIZA 616: Caleb Kicklighter & Jeff Nichols</p>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="galleryArt">
             <div class="galleryArt-Cont">
-                <video controls>
-                    <source src="./Assets/Art/gallery11.mp4" type="video/mp4">
-                </video>
-                <div class="galleryArt-Text">
-                    <h6>Floating Torri Gate</h6>
-                    <h6>Spring 2022 | VIZA 616: Caleb Kicklighter & Jeff Nichols</h6>
-                </div>
+                <a href="./Assets/Art/gallery11.png" data-lightbox="galleryArt">
+                    <video id="renderTurns" controls>
+                        <source src="./Assets/Art/video3.mp4" type="video/mp4">
+                    </video>
+                    <!-- <img src="./Assets/Art/gallery11.png" alt=""> -->
+                    <div class="galleryArt-Text">
+                        <h6>Floating Torri Gate</h6>
+                        <p>Spring 2022 | VIZA 616: Caleb Kicklighter & Jeff Nichols</p>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="galleryArt">
             <div class="galleryArt-Cont">
-                <video controls>
-                    <source src="./Assets/Art/gallery12.mp4" type="video/mp4">
-                </video>
-                <div class="galleryArt-Text">
-                    <h6>Rendered Still Life</h6>
-                    <h6>Spring 2022 | VIZA 616: Caleb Kicklighter & Jeff Nichols</h6>
-                </div>
+                <a href="./Assets/Art/gallery12.png" data-lightbox="galleryArt">
+                    <video id="renderTurns" controls>
+                        <source src="./Assets/Art/video4.mp4" type="video/mp4">
+                    </video>
+                    <!-- <img src="./Assets/Art/gallery12.png" alt=""> -->
+                    <div class="galleryArt-Text">
+                        <h6>Rendered Still Life</h6>
+                        <p>Spring 2022 | VIZA 616: Caleb Kicklighter & Jeff Nichols</p>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="galleryArt">
@@ -247,7 +259,7 @@
                     <img src="./Assets/Art/gallery13.png" alt="">
                 <div class="galleryArt-Text">
                     <h6>Character Profile: Yamato</h6>
-                    <h6>Summer 2022</h6>
+                    <p>Summer 2022</p>
                 </div>
                 </a>
             </div>
@@ -258,8 +270,19 @@
                     <img id="lion" src="./Assets/Art/art1.jpg" alt="">
                     <div class="galleryArt-Text">
                         <h6>Character Profile: Estrella</h6>
-                        <h6>Spring 2022</h6>
+                        <p>Spring 2022</p>
                     </div>
+                </a>
+            </div>
+        </div>
+        <div class="galleryArt">
+            <div class="galleryArt-Cont">
+                <a href="./Assets/Art/gallery16.png" data-lightbox="galleryArt">
+                    <img src="./Assets/Art/gallery16.png" alt="">
+                    <div class="galleryArt-Text">
+                        <h6>Chinese New Year: Tiger</h6>
+                        <p>Jan. 2022</p>
+                    </div>   
                 </a>
             </div>
         </div>
@@ -268,9 +291,9 @@
                 <a href="./Assets/Art/gallery14.png" data-lightbox="galleryArt">
                     <img src="./Assets/Art/gallery14.png" alt="">
                     <div class="galleryArt-Text">
-                        <h6>Chinese New Year: Tiger</h6>
-                        <h6>Jan. 2022</h6>
-                    </div>   
+                        <h6>Happy Halloween</h6>
+                        <p>Fall 2021</p>
+                    </div>
                 </a>
             </div>
         </div>
@@ -279,8 +302,8 @@
                 <a href="./Assets/Art/gallery15.png" data-lightbox="galleryArt">
                     <img src="./Assets/Art/gallery15.png" alt="">
                     <div class="galleryArt-Text">
-                        <h6>Happy Halloween</h6>
-                        <h6>Fall 2021</h6>
+                        <h6>Tears Dripping in Gold</h6>
+                        <p>Spring 2019 </p>
                     </div>
                 </a>
             </div>
@@ -291,15 +314,14 @@
                     <img src="./Assets/Art/gallery16.png" alt="">
                     <div class="galleryArt-Text">
                         <h6>Tears Dripping in Gold</h6>
-                        <h6>Spring 2019 </h6>
+                        <p>Spring 2019 </p>
                     </div>
                 </a>
             </div>
         </div>
     </div>
-   
 
-     <!--footer section-->
+    <!--footer section-->
      <div class="footerContainer">
         <!--Footer Title-->
         <div class="linksContainer">

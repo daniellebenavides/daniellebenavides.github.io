@@ -76,36 +76,42 @@
 
 <!--resume section-->
 <div class="ssContainer">
-    <div class="textCenter skills">
-        <h5>Skills</h5>
-        <p>Bilingual in English & Spanish — Artistic Creativity — Concept Art + Storytelling — Communication — Organization — Collaboration — Teamwork — Dedication</p>
-    </div>
-    <div class="solid">
-    </div>
     <div class="textCenter software">
         <h5>Software</h5>
         <p>Microsoft Office Suite — Carrd Builder — Adobe Creative Suite: Illustrator, InDesign, Photoshop, Premiere Pro , After Effects, Substance Painter —  Sketchbook Pro — Rhinoceros — Revit + Enscape — SketchUp — ArchiCAD + Twinmotion — Maya + Renderman — HTML + CSS</p>
+    </div>
+    <div class="solid">
+    </div>
+    <div class="textCenter skills">
+        <h5>Skills</h5>
+        <p>Bilingual in English & Spanish — Artistic Creativity — Concept Art + Storytelling — Communication — Organization — Collaboration — Teamwork — Dedication</p>
     </div>
 </div>
 
 <!--email section-->
 <div class="emailContainer">
-    <div class="contactMe">
-        Contact:
-        danibena9tamu@gmail.com, or submit a message below. 
-    </div>
-    <div class="emailBoxes">
-        <form action="mailto:danibena9tamu@gmail.com" method="post" enctype="text/plain">
-            Name: <br>
-            <input type="text" name="name"><br>
-            E-mail: <br>
-            <input type="text" name="mail">
-            <br>
-            Message: <br>
-            <input textarea name="message" size="40"><br><br>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-        </form>
+    <div class="emailBox">
+        <div class="contactMe">
+            <b>Contact:</b><br>
+            danibena9tamu@gmail.com, or submit a message below. 
+        </div>
+        <div class="emailForm">
+            <form id="contactForm" action="mailto:danibena9tamu@gmail.com" method="post" enctype="text/plain">
+                <div class="row">
+                    <input id="name" class= "input" name="name" type="text" placeholder="Name" size="46"><br>
+                </div>
+                <div class="row">
+                    <input id="email" class= "input" name="email" type="text" placeholder="Email" size="46"><br>
+                </div>
+                <div class="row">
+                    <textarea id="message" class="input" name="message" type="text" placeholder="Message"rows="8" cols="45"></textarea><br>
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
@@ -117,7 +123,7 @@
             <i class="fa-brands fa-instagram"></i>
             Instagram
         </a>
-        <a class="menuItem email">
+        <a href="mailto:danibena9tamu@gmail.com" class="menuItem email">
             <i class="fa-regular fa-envelope"></i>
             danibena9tamu@gmail.com
         </a>

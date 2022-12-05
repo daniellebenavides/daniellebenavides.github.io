@@ -110,10 +110,7 @@ img {
 @media only screen and (max-width: 430px) {
   .linksContainer {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    font-size: small;
+    flex-direction: column;
   }
 }
 
@@ -304,7 +301,12 @@ hr.solid {
   border: 4px solid #ACFCD9;
   margin: 10px 0px 10px 0px;
   width: 110px;
-  display: flex;
+}
+@media only screen and (max-width: 430px) {
+  hr.solid {
+    width: 100px;
+    margin: 12px auto;
+  }
 }
 
 .aboutMeText {
@@ -358,6 +360,7 @@ hr.solid {
   .ssContainer {
     flex-direction: column;
     align-items: center;
+    padding: 40px 5px;
   }
 }
 
@@ -378,12 +381,48 @@ hr.solid {
   background-color: #230C33;
 }
 
+.emailBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contactMe {
   font-family: "Raleway";
   color: #CAA8F5;
+  margin: 10px 0px;
+  text-align: center;
 }
 
-form {
-  color: #CAA8F5;
+#name, #email, #message {
+  color: #230C33;
+  font-family: "Raleway";
+  text-align: left;
+}
+
+.row {
+  padding: 8px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input[type=submit], input[type=reset] {
+  padding: 5px 15px;
+  background: #7E52A0;
+  border: 0 none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Raleway";
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  padding: 5px 15px;
+  background: #ACFCD9;
+  border: 0 none;
+  cursor: pointer;
+  border-radius: 5px;
   font-family: "Raleway";
 }/*# sourceMappingURL=styles.css.map */

@@ -51,15 +51,24 @@
             justify-content: center;
             opacity: 0%;
             transition: opacity 500ms ease;
+            @include respond{
+                background-color: none;
+            }
             p{
                 color: white;
                 font-size: 12pt;
+                @include respond{
+                    opacity: 0;
+                }
             }
         }
     }
     &:hover, &:focus{
         .textTitle{
             opacity: 1;
+            @include respond{
+                opacity: 0;
+            }
         }
     }
 }

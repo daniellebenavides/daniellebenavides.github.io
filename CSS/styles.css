@@ -191,12 +191,27 @@ img {
   opacity: 0%;
   transition: opacity 500ms ease;
 }
+@media only screen and (max-width: 430px) {
+  .bannerCont .image .textTitle {
+    background-color: none;
+  }
+}
 .bannerCont .image .textTitle p {
   color: white;
   font-size: 12pt;
 }
+@media only screen and (max-width: 430px) {
+  .bannerCont .image .textTitle p {
+    opacity: 0;
+  }
+}
 .bannerCont:hover .textTitle, .bannerCont:focus .textTitle {
   opacity: 1;
+}
+@media only screen and (max-width: 430px) {
+  .bannerCont:hover .textTitle, .bannerCont:focus .textTitle {
+    opacity: 0;
+  }
 }
 
 .portContainer {

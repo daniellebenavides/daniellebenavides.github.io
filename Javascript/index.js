@@ -6,6 +6,7 @@ const projects=document.querySelectorAll(".galleryArt");
 projects.forEach(project=> {
     project.addEventListener("click", function() {
         document.querySelector("body").style.overflow="hidden"
+        document.querySelector("body").style.overflow="unset"
     })
     
 });
@@ -18,5 +19,6 @@ document.getElementsByClassName("lightboxOverlay")[0].addEventListener("click", 
 document.getElementsByClassName("lb-close")[0].addEventListener("click", function() {
     
     document.querySelector("body").style.overflow="unset"
+    
 })
 })

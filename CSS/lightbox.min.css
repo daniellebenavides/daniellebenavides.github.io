@@ -38,12 +38,12 @@ body.lb-disable-scrolling{overflow:hidden;}
 
 .lb-data .lb-details{width:100%;float:left;text-align:left;line-height:1.1em}
 
-.lb-data .lb-caption{font-family:'Raleway'; font-size:10pt; font-weight:700;line-height:20px;}
+.lb-data .lb-caption{font-family:'Raleway'; font-size:14pt; font-weight:700;line-height:20px;}
 
 .lb-data .lb-caption a{color:#4ae}
 
 .lb-data .lb-number{display:block;clear:left;padding-bottom:1em;font-family:'Raleway';font-size:10pt;color:#999}
 
-.lb-data .lb-close{display:block; float:right;width:30px;height:30px;background:url(../images/close.png) top right no-repeat; text-align:center; outline:0;filter:alpha(Opacity=70);opacity:.7;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s}
+.lb-data .lb-close{display:block; float:right;width:30px;height:30px;background:url(../images/close.png) top right no-repeat; text-align:center; position: absolute; top: -40px; margin-right:-50px;outline:0;filter:alpha(Opacity=70);opacity:.7;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s}
 
 .lb-data .lb-close:hover{cursor:pointer;filter:alpha(Opacity=100);opacity:1}

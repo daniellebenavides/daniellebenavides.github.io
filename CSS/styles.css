@@ -135,6 +135,12 @@ img {
   display: flex;
   justify-content: space-evenly;
 }
+@media only screen and (max-width: 430px) {
+  .portContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 .lineC {
   border: 2px solid #7E52A0;
@@ -446,6 +452,9 @@ hr.solid {
   color: #CAA8F5;
   margin: 10px 0px;
   text-align: center;
+}
+.contactMe b {
+  font-size: 14pt;
 }
 
 #name, #email, #message {

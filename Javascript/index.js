@@ -6,7 +6,7 @@ const projects=document.querySelectorAll(".galleryArt");
 projects.forEach(project=> {
     project.addEventListener("click", function() {
         document.querySelector("body").style.overflow="hidden"
-        document.querySelector("body").style.overflow="unset"
+        //document.querySelector("body").style.overflow="unset"
     })
     
 });

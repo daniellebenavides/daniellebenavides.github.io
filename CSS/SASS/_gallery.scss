@@ -54,6 +54,23 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        p{
+            color: $fontGallery;
+            font-size: 10pt;
+        }
+    }
+    &-videoT{
+        opacity: 0%;
+        transition: opacity ease-in .2s;
+        text-align: center;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        p{
+            color: $fontGallery;
+            font-size: 10pt;
+        }
     }
 
     &:hover, &:focus{
@@ -72,6 +89,14 @@
                 opacity: 1;
                 p{
                     color: white;
+                    font-size: 10pt;
+                }
+            }
+            &-videoT{
+                cursor: crosshair;
+                opacity: 1;
+                h6, p{
+                    color: $fontGallery;
                     font-size: 10pt;
                 }
             }
